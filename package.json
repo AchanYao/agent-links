@@ -1,0 +1,11 @@
+{
+  "name": "agent-links",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "sync": "node scripts/link-agents.js",
+    "dry-run": "node scripts/link-agents.js --dry-run",
+    "watch": "node scripts/link-agents.js --watch"
+  }
+}

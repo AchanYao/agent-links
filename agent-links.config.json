@@ -1,0 +1,42 @@
+{
+  "$schema": "./agent-links.schema.json",
+  "source": {
+    "agentsFile": "global/GLOBAL_AGENTS.md",
+    "skillsDir": "skills"
+  },
+  "targets": [
+    {
+      "name": "opencode",
+      "agentsFile": "${HOME}/.opencode/AGENTS.md",
+      "skillsDir": "${HOME}/.opencode/skills"
+    },
+    {
+      "name": "codex",
+      "agentsFile": "${HOME}/.codex/AGENTS.md",
+      "skillsDir": "${HOME}/.codex/skills"
+    },
+    {
+      "name": "VS Code Copilot Insiders on Windows",
+      "agentsFile": "${APPDATA}/Code - Insiders/User/prompts/AGENTS.md",
+      "skillsDir": "${HOME}/.copilot/skills",
+      "platforms": ["win32"]
+    },
+    {
+      "name": "VS Code Copilot Insiders on macOS",
+      "agentsFile": "${HOME}/Library/Application Support/Code - Insiders/User/prompts/AGENTS.md",
+      "skillsDir": "${HOME}/.copilot/skills",
+      "platforms": ["darwin"]
+    },
+    {
+      "name": "VS Code Copilot Insiders on Linux",
+      "agentsFile": "${HOME}/.config/Code - Insiders/User/prompts/AGENTS.md",
+      "skillsDir": "${HOME}/.copilot/skills",
+      "platforms": ["linux"]
+    },
+    {
+      "name": "Claude Code",
+      "agentsFile": "${HOME}/.claude/CLAUDE.md",
+      "skillsDir": "${HOME}/.claude/skills"
+    }
+  ]
+}
